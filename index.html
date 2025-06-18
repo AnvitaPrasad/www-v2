@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link id="dynamic" rel="icon" type="image/svg+xml" href="favicons/favicon1.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>SugarLabs</title>
+    <script>
+      (function() {
+        const redirectPath = sessionStorage.getItem('redirectPath');
+        if (redirectPath) {
+          sessionStorage.removeItem('redirectPath');
+          window.history.replaceState(null, null, redirectPath);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-C7xqYRpc.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-C_2DP8_N.js">
+    <link rel="stylesheet" crossorigin href="./assets/vendor-h0EPuWW_.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Dek1JOXZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./Randomfavicon.js" crossorigin="anonymous"></script>
+  </body>
+</html>
